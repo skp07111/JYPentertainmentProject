@@ -1,0 +1,40 @@
+@charset "utf-8";
+section.main-notice{width:100%;vertical-align:top;background-color:#fff; height:120px;}   /*main top of notice*/
+section.main-notice .notice{display:inline-block;zoom:1; *display:inline;width:324px;background:url(../image/notice000.jpg) 40px 38px no-repeat;padding:35px 0 0 160px;min-height:30px;vertical-align:top;}
+section.main-notice .notice ul{list-style:none}
+section.main-notice .notice ul li{display:block;padding:0 0 2px 0}
+section.main-notice .notice ul li a{display:inline-block;zoom:1; *display:inline;width:215px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#888;font-family:nanumb;font-size:11px;vertical-align:top;}
+section.main-notice .notice ul li a:hover{text-decoration:underline}
+section.main-notice .notice ul li time{display:inline-block;zoom:1; *display:inline;width:71px;text-align:right;color:#888;font-family:nanumb;font-size:11px;vertical-align:top;}
+section.main-notice .new-album{display:inline-block;zoom:1; *display:inline;width:346px;background:url(../image/newalbum.gif) 10px 37px no-repeat;padding:11px 0 0 136px}
+section.main-notice .main-notice-wrap{width:980px;margin:0 auto}
+
+section.main-artist-rolling{width:100%;background-color:#f3f3f3}
+section.main-sns-relation{width:100%;background-color:#000}
+
+#main-rolling-view{position:relative;width:980px;margin:0 auto;height:440px;overflow:hidden}   /*main of  visual image Rolling*/
+#main-rolling-imgList {position:absolute;width:6860px; left:0;top:0}
+#main-rolling-imgList div {float:left; margin:0;padding:0}
+#main-rolling-view .prev{position:absolute;top:190px;left:0px}  
+#main-rolling-view .prev a{cursor:pointer;background:url(../image/rolling_prevnext.gif) no-repeat;background-position:0 0;display:block;width:30px;height:60px;text-indent:-9999px;font-size:0;line-height:0%}  
+#main-rolling-view .prev a:hover{background-position:0 -60px}  
+#main-rolling-view .next{position:absolute;top:190px;right:0px}  
+#main-rolling-view .next a{cursor:pointer;background:url(../image/rolling_prevnext.gif) no-repeat;background-position:-30px 0;display:block;width:30px;height:60px;text-indent:-9999px;font-size:0;line-height:0%}  
+#main-rolling-view .next a:hover{background-position:-30px -60px}  
+
+#mainbottom-toolbar{position:relative;width:980px;margin:0 auto;height:126px;overflow:hidden}   /*main bottom of SNS*/
+#mainbottom-toolbar-list {position:absolute;width:4900px; left:0;top:0;z-index:50}
+#mainbottom-toolbar-list div {float:left; margin:0;padding:0}
+
+#mainbottom-toolbar-list div.youtube-wrap{background:url(../image/youtube.gif) #000 45px 32px no-repeat;}  /*main page of  youtube*/
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std figure{position:relative}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std figure img{cursor:pointer}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std figure figcaption{text-indent:-9999px;font-size:0;line-height:0%}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std figure a.play{display:block;background:url(../image/play2.png) no-repeat;width:42px;height:42px;position:absolute;left:38px;top:23px;text-indent:-9999px;font-size:0;line-height:0%;}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li:hover figure a.play{display:none}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li:hover figure img.clip-img{-moz-opacity:0.2;-khtml-opacity:0.2;opacity:0.2;background:#000;-webkit-transition: opacity 0.6s linear}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li:hover span.over{display:block;position:absolute;left:4px;top:17px;z-index:30;cursor:pointer}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li span.over{display:none;position:absolute;left:4px;top:17px;z-index:30}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li span.over .type{display:block;width:106px;padding-left:4px}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li span.over .caption{display:block;width:106px;padding-left:4px;font-family:nanumb;font-size:13px;color:#fff}
+#mainbottom-toolbar-list div.youtube-wrap .thumbil-std li span.over .featby{display:block;width:106px;padding-left:4px;font-family:nanumb;font-size:11px;line-height:13px;color:#fff}

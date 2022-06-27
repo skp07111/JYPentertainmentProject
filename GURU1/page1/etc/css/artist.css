@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+div.background {
+	width:900px;
+	min-height: 675px;
+		margin: 0px;
+		padding: 0px;
+		background-color:#ffffff;
+		margin-top: -15px;
+		width: 100%;
+	}
+	
+section.main{background-color:#fff;width:980px;} 
+section.main h3{display:block;background-color:#f3f3f3;height:200px} 
+section.main h3 img{margin:40px auto 0;}
+
+.main {
+	width:980px;
+	margin:0 auto;
+}
+
+.artist_table {
+	font-size:0px;
+	max-width:980px;
+	margin:25px 0 0 0px;
+}
+
+.pic {
+  width:290px;
+  height:230px;
+  overflow:hidden;
+}
+  
+.artist {
+	font-size:0px;
+	max-width:980px;
+/*	margin:25px 0 0 0px;*/
+}
+
+.artistbox {
+	height:260px;
+	font-size:0px;
+	vertical-align:top;
+	display:inline-block;
+	padding:0 17px 45px 17px;
+}
+	
+.pic img {
+  width:290px;
+  height:230px;
+  transition: all 1s ease;
+	}
+.pic img:hover {
+  width:330px;
+  height: 262px;
+}
+
+.name {
+	margin:4px 0;
+text-align:center; 
+font-size:20px;
+font-family: 'Oswald', sans-serif;
+}

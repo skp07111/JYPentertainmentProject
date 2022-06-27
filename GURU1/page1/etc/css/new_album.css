@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.new_album {
+	display: inline-block;
+	zoom: 1; 
+	width: 346px;
+	background: url(../image/newalbum.gif) 10px 37px no-repeat;
+	background-color: #fff;
+	padding: 11px 0 0 136px;
+	z-index: 5;
+}
+
+.swiper-container.mySwiper {
+	width: 300px;
+	height: 99px;
+	overflow: hidden;
+}
+
+.prev {
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin: -98px 0 0 300px;
+	z-index: 4;
+}
+
+.next {
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin: 0 0 0 1px;
+	z-index: 4;
+}
+
+.swiper-slide.slides {
+	cursor: pointer;
+	position: relative;
+	background-position: center;
+    background-size: cover;
+    display:flex;
+	align-items:center;
+	justify-content:center;
+    z-index: 3;
+}
+
+.swiper-slide.slides img {
+    display: block;
+    height: 87px;
+	width: 87px;
+	z-index: 3;
+}

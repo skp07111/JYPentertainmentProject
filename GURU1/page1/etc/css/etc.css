@@ -1,0 +1,132 @@
+
+
+section.sitemap-wrap{background-color:#fff;width:980px} 
+section.sitemap-wrap h2{display:block;background-color:#f3f3f3;height:170px} 
+section.sitemap-wrap h2 img{margin:70px 0 0 180px}
+
+section.sitemap-wrap .sitemap-link ul li{list-style:none;}
+
+/*
+body{
+	margin:0px;
+	padding:0px;
+	}
+#header{
+width: 100%;	
+background: #222222 ;
+height:78px;
+	}
+*/
+
+
+/*------------------------------------*\
+   custom(sitemap)
+\*------------------------------------*/
+
+
+.clear { clear:both; }  
+
+#sitemap-b{
+	/*width:780px;*/
+	height:590px;
+	background-image:url('../image/t-Sitemap.png');
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	padding-top:30px;
+	margin:0 auto;
+	}
+
+#section-b{
+	position:relative;
+	display:block;
+	width:540px;
+	/*float:right;*/
+	margin-left:414px;
+}
+
+
+#sitemap-b ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#sitemap-b p{
+	display:block;
+	width:134px;
+	height:29px;
+	margin:0;
+	padding:0 0 10px 0;
+	text-indent:-9999px;
+	background-repeat:no-repeat;
+}
+
+
+.t-company {
+	background-image:url('../image/t-company.png');
+}
+.t-artist {
+	background-image:url('../image/t-artist.png');
+}
+.t-actor {
+	background-image:url('../image/t-actor.png');
+}
+.t-audition {
+	background-image:url('../image/t-audition.png');
+}
+
+
+
+#sitemap-b ul li{
+	display:block;
+	width:160px;
+	list-style:none;
+	padding:10px;
+}
+
+.s-company{
+background-color:#0866e6;
+	float:left;
+	height:250px;
+}
+.s-artist{
+background-color:#0049c2;
+float:left;
+height:410px;
+}
+
+.s-actor{
+background-color:#0866e6;
+float:right;
+height:90px;
+
+}
+.s-audition{
+background-color:#259cfa;
+float:right;
+height:140px;
+}
+
+
+#sitemap-b ul li ul li{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+	font-size:12px;
+}
+#sitemap-b ul li ul li a{
+	display:block;
+	padding:3px;
+	color:#92b6ff;
+  text-decoration: none;
+	font-family: nanumb, sans-serif;
+	font-weight:bold;
+}
+#sitemap-b ul li ul li a:hover{
+	-webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+	color:#fff;
+}
