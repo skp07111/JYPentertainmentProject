@@ -1,1 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head><title>
+	:: JYP Entertainment ::
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
+	<!-- Open Graph -->
+	<meta property="og:title" content="JYP Entertainment" /><meta property="og:image" content="https://jyplevel2storage01.blob.core.windows.net/system/og_JYP.png" /><meta property="og:image:width" content="800" /><meta property="og:image:height" content="400" /><meta property="og:description" content="JYP 엔터테인먼트" />
+	
+	<!-- 위치 수정 2013.12.11-->
+	<!--s: slideKit of Plugin styles -->
+	<link rel="stylesheet" type="text/css" href="../page1/etc/css/sliderkit/sliderkit-demos.css" media="screen" /><link rel="stylesheet" type="text/css" href="../page1/etc/css/sliderkit/sliderkit-core.css" media="screen" />
+	<!--e: //slideKit of Plugin styles -->
+
+	<link href="../page1/etc/css/design.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/styles_new.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/main.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/company.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/ir.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/etc.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../page1/etc/css/artist.css" rel="stylesheet" type="text/css" media="screen" />
+	
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/common.js"></script>
+	<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script> <!-- hash 관련 스크립트 -->
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/ui/1.8.2/jquery-ui.js"></script>
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/AdQUA.js"></script>
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/pageNavigator.js"></script>
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/JYPEntertaintment.js"></script>
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/swfobject.js"></script>
+	<script type="text/javascript" language="javascript" src="../page1/etc/js/nono.js"></script>
+	
+
+	
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" language="javascript" src="/js/html5.js"></script>
+	<script type="text/javascript" language="javascript" src="/js/innershiv.js"></script>
+	<![endif]-->
+
+	<!--s: slideKit of Plugin scripts -->
+	<script type="text/javascript" src="../page1/etc/js/sliderkit/jquery.sliderkit.1.6.min.js"></script>
+	<script type="text/javascript" src="../page1/etc/js/sliderkit/jquery.mousewheel.min.js"></script>
+	<!--e: //slideKit of Plugin scripts -->
+
+
+	<!--[if IE 9]>
+		<link href="/common/css/design_ie9.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<link href="/common/css/design_ie8.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link href="/common/css/design_ie7.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+		<link href="/common/css/design_ie6.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="/common/css/sliderkit/sliderkit-demos-ie6.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="/common/css/sliderkit/sliderkit-demos-ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="/common/css/sliderkit/sliderkit-demos-ie8.css" />
+	<![endif]-->
+
+	<script type="text/javascript">
+		var userAgent = navigator.userAgent.toLowerCase(); // Agent 정보
+
+		// favicon 설정
+		if (userAgent.match('iphone')) {			
+			document.write('<link rel="apple-touch-icon" href="https://jyplevel2storage01.blob.core.windows.net/system/bookmark_normal_ios_120.png" />')	
+			location.href = "http://m.jype.com";			
+		} else if (userAgent.match('ipad')) {
+			document.write('<link rel="apple-touch-icon" sizes="72*72" href="https://jyplevel2storage01.blob.core.windows.net/system/bookmark_normal_ios_120.png" />')
+			location.href = "http://m.jype.com";
+		} else if (userAgent.match('ipod')) {
+			document.write('<link rel="apple-touch-icon" href="https://jyplevel2storage01.blob.core.windows.net/system/bookmark_normal_ios_120.png" />')
+			location.href = "http://m.jype.com";
+		} else if (userAgent.match('android')) {
+			document.write('<link rel="shortcut icon" href="https://jyplevel2storage01.blob.core.windows.net/system/bookmark_normal_android_120.png />')
+			location.href = "http://m.jype.com";
+		} else {
+			document.write('<link rel="shortcut icon" href="https://jyplevel2storage01.blob.core.windows.net/system/Favicon_JYP.ico" />')
+		}
+	</script>
+	
+	
+
+
+<script type="text/javascript">
+
+	function tLinkFormat(page) {
+
+		var flDiv = location.href;
+		var MDiv = flDiv.split("?LDiv=");
+		var QDiv = flDiv.split("&LDiv=");	
+		
+		if (MDiv[1] == undefined)
+		{
+			MDiv[1] = QDiv[1];
+			
+			if (MDiv[1] == undefined) 
+			{
+				MDiv[1] = "KO";
+			}
+		}
+		
+		if (page == "Main"){
+		  location.href = "/Main.aspx?LDiv="+ MDiv[1];
+		}
+		else if (page == "AboutJYP"){
+		  location.href = "/company/AboutJYP.aspx?LDiv="+ MDiv[1];
+		}
+		else if (page == "History") {
+		  location.href = "/company/History.aspx?LDiv="+ MDiv[1];		
+		}
+		else if (page == "Notice") {
+		  location.href = "/company/Notice.aspx?LDiv="+ MDiv[1];		
+		}
+		else if (page == "ContactUs") {
+		  location.href = "/company/ContactUs.aspx?LDiv="+ MDiv[1];		
+		}
+		
+		else if (page == "Stock") {
+		  location.href = "/ir/Stock.aspx?LDiv="+ MDiv[1];		
+		}
+		else if (page == "Artist") {
+		  location.href = "/common/ArtistMain.aspx?LDiv="+ MDiv[1];		
+		}		
+		//else if (page == "Audition") {
+		//  location.href = "/audition/Audition.aspx?LDiv="+ MDiv[1];		
+		//}
+		else if (page == "NEWS") {
+		  location.href = "/audition/News.aspx?LDiv="+ MDiv[1];		
+		}
+		else if (page == "FAQ") {
+		  location.href = "/audition/FAQ.aspx?LDiv="+ MDiv[1];		
+		}
+		else if (page == "sitemap") {
+		  location.href = "/etc/sitemap.aspx?LDiv="+ MDiv[1];		
+		}		
+		else if (page == "personal") {
+		  location.href = "/personal.aspx?LDiv="+ MDiv[1];		
+		}
+		
+	}
+	
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46828308-16']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style type="text/css">
+	
+.sub-outside-wrap{background: url(../page1/etc/image/bg_sheader_200.gif) #fff repeat-x;}
+
+ul li.pagination {list-style-type:none;float:left;margin-left:1px;margin-right:1px;}
+
+div.board-page {
+  width: 300px;
+  margin-left: 370px;
+  margin-right: auto;
+}
+
+form {
+	width: 300px;
+	margin-top: 50px;
+	margin-left: 40px;
+  	margin-right: auto;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+		<nav>
+			<div class="nav_bg">
+				<div id="cssmenu">
+					<ul>
+						<li class="jyplogo">
+			<a href="../page1/page1.html" onclick="javascript:tLinkFormat('Main');" title="JYP Entertainment">JYPEntertainment
+			</a>
+		</li>
+		<li class="has-sub">
+			<a href="../page1/etc/page5.html" onclick="javascript:tLinkFormat('AboutJYP');"><img src="../page1/etc/image/nav-company.png">
+			</a>
+			<ul>
+				<li><a href="../page1/etc/page5.html" onclick="javascript:tLinkFormat('AboutJYP');" title="About JYP">ABOUT JYP</a>
+				</li>
+				<li><a href="../page1/etc/page6.html" onclick="javascript:tLinkFormat('History');" title="History">HISTORY</a>
+				</li>
+				<li><a href="../page2/page2.html" onclick="javascript:tLinkFormat('Notice');" title="Notice" >NOTICE</a>
+				</li>
+				<li><a href="https://recruit.jype.com" target="_blank">RECRUIT</a>
+				</li>
+				<li><a href="https://edm-wish.jype.com" target="_blank">CSR</a>
+				</li>
+				<li class="last"><a href="https://www.jype.com/ir/Stock.aspx?LDiv=KO" onclick="javascript:tLinkFormat('Stock');" title="Financial information">IR</a>
+				</li>
+						
+				<li><a href="../page1/etc/page7.html" onclick="javascript:tLinkFormat('ContactUs');" title="Contact Us">CONTACT US</a>
+				</li>
+			</ul>
+		</li>
+		<li class="has-sub">
+			<a href="../page3/page3.html" onclick="javascript:tLinkFormat('Artist')"><img src="../page1/etc/image/nav-artist.png"></a>
+		</li>
+		<li class="has-sub last">
+			<a href="../page4/page4.html" target="_blank"><img src="../page1/etc/image/nav-audition.png"></a>
+		</li>
+		<li class="util">
+			<div class="global">
+				<span>KO</span>
+				<span>
+					<a href="https://www.jype.com/Main.aspx?LDiv=EN">EN</a>
+				</span>
+				<span>
+					<a href="https://www.jype.com/Main.aspx?LDiv=CH">CH</a>
+				</span>
+				<span>
+					<a href="https://www.jype.com/Main.aspx?LDiv=JP">JP</a>
+				</span>
+			</div>
+		</li>
+		<li>
+			<div class="snsicon">
+				<a href="https://twitter.com/jypnation" target="_blank" class="twitter">JYP Official Twitter</a>
+				<a href="https://www.facebook.com/jypnation" target="_blank" class="facebook">JYP Official Facebook</a>
+				<a href="https://www.youtube.com/jypentertainment" target="_blank" class="youtube">JYP Official Youtube</a>
+				<a href="https://edm-wish.jype.com" target="_blank" class="edm">EDM</a>
+			</div>
+		</li>
+		</ul>
+		</div>
+		</nav>
+		</header>
+
+		<!-- s: 서브 컨텐츠 페이지 로딩 위치.. -->
+		<div class="sub-outside-wrap">
+			<div class="sub-outside-subwrap">
+				<section class="layout-content-frame">
+					<section class="company-wrap" data-param="company">
+						<div class="contents-wrap">
+							<h2><img src="../page1/etc/image/h2_title3.gif" alt="Notice"></h2>
+							<div class="contents">
+								<p class="notice-caption">㈜JYP의<br /><strong>새로운 소식</strong>을 알려드립니다.</p>
+								<table class="bbs-list">
+									<caption>㈜JYP의 새로운 소식을 알려드립니다.</caption>
+									<thead>
+										<tr>
+											<th class="field-no"><img src="../page1/etc/image/th_field1.gif" alt="NO" /></th>
+											<th class="field-title"><img src="../page1/etc/image/th_field2.gif" alt="TITLE" /></th>
+											<th class="field-date"><img src="../page1/etc/image/th_field3.gif" alt="DATE" /></th>
+										</tr>
+									</thead>
+									<tbody id="myTable">
+										<tr><td>70</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=383&amp;LDiv=KO" alt="제26기 결산공고" title="제26기 결산공고">제26기 결산공고</a></td><td><time datetime="2021-03-31T18:42:36.8270000">2021.03.31</time></td></tr>
+											<tr><td>69</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=382&amp;LDiv=KO" alt="(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지" title="(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지">(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지</a></td><td><time datetime="2021-03-18T19:31:22.7370000">2021.03.18</time></td></tr>
+											<tr><td>68</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=381&amp;LDiv=KO" alt=" (주주 공지 사항) 제26기 정기주주총회 소집 통지" title=" (주주 공지 사항) 제26기 정기주주총회 소집 통지"> (주주 공지 사항) 제26기 정기주주총회 소집 통지</a></td><td><time datetime="2021-03-12T14:44:44.7230000">2021.03.12</time></td></tr>
+											<tr><td>67</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=380&amp;LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2021-01-11T13:00:11.5600000">2020.01.11</time></td></tr>
+											<tr><td>66</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=379&amp;LDiv=KO" alt="(주주 공지 사항)제25기 정기주주총회 소집 통지" title="(주주 공지 사항)제25기 정기주주총회 소집 통지">(주주 공지 사항)제25기 정기주주총회 소집 통지</a></td><td><time datetime="2020-03-11T01:00:40.4600000">2020.03.11</time></td></tr>
+											<tr><td>65</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=378&amp;LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2020-01-28T14:00:05.0630000">2020.01.28</time></td></tr>
+											<tr><td>64</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=377&amp;LDiv=KO" alt="[JYP_EDM위시] 기부사이트 오픈 안내" title="[JYP_EDM위시] 기부사이트 오픈 안내">[JYP_EDM위시] 기부사이트 오픈 안내</a></td><td><time datetime="2020-01-20T13:33:41.8100000">2020.01.20</time></td></tr>
+											<tr><td>63</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=376&amp;LDiv=KO" alt="JYP Fan`s EDM 체크카드 출시이벤트 안내(포토카드 총 2만장으로 변경)" title="JYP Fan`s EDM 체크카드 출시이벤트 안내(포토카드 총 2만장으로 변경)">JYP Fan`s EDM 체크카드 출시이벤트 안내(포토카드 총 2만장으로 변경)</a></td><td><time datetime="2020-01-08T10:19:18.6270000">2020.01.08</time></td></tr>
+											<tr><td>62</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=1&amp;schType=ALL&amp;schString=&amp;idx=375&amp;LDiv=KO" alt="JYP Fan`s EDM 체크카드 출시" title="JYP Fan`s EDM 체크카드 출시">JYP Fan`s EDM 체크카드 출시</a></td><td><time datetime="2019-12-31T10:28:57.5500000">2019.12.31</time></td></tr>
+											<tr><td>61</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=373&LDiv=KO" alt="(주주 공지 사항) 제25기 임시주주총회 소집공고" title="(주주 공지 사항) 제25기 임시주주총회 소집공고">(주주 공지 사항) 제25기 임시주주총회 소집공고</a></td><td><time datetime="2019-09-26T10:04:33.3570000">2019.09.26</time></td></tr><tr><td>60</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=371&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2019-09-14T14:00:07.8300000">2019.09.14</time></td></tr><tr><td>59</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=370&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2019-08-29T18:00:02.5930000">2019.08.29</time></td></tr><tr><td>58</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=369&LDiv=KO" alt="전자증권 전환대상 주권 등의 권리자 보호 안내" title="전자증권 전환대상 주권 등의 권리자 보호 안내">전자증권 전환대상 주권 등의 권리자 보호 안내</a></td><td><time datetime="2019-07-17T16:13:59.9530000">2019.07.17</time></td></tr><tr><td>57</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=358&LDiv=KO" alt="J.Y. Park X Mnet " 슈퍼인턴"="" teaser="" 4"="" title="J.Y. Park X Mnet ">J.Y. Park X Mnet "슈퍼인턴" Teaser 4</a></td><td><time datetime="2018-12-13T18:11:32.9100000">2018.12.13</time></td></tr><tr><td>56</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=351&LDiv=KO" alt="J.Y. Park X Mnet " 슈퍼인턴"="" teaser="" 3"="" title="J.Y. Park X Mnet ">J.Y. Park X Mnet "슈퍼인턴" Teaser 3</a></td><td><time datetime="2018-11-14T12:15:08.9170000">2018.11.14</time></td></tr><tr><td>55</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=349&LDiv=KO" alt="J.Y. Park X Mnet " 슈퍼인턴"="" teaser="" 2"="" title="J.Y. Park X Mnet ">J.Y. Park X Mnet "슈퍼인턴" Teaser 2</a></td><td><time datetime="2018-11-07T14:04:50.2370000">2018.11.07</time></td></tr><tr><td>54</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=348&LDiv=KO" alt="J.Y. Park X Mnet " 슈퍼인턴"="" teaser"="" title="J.Y. Park X Mnet ">J.Y. Park X Mnet "슈퍼인턴" Teaser</a></td><td><time datetime="2018-11-01T10:29:30.3100000">2018.11.01</time></td></tr><tr><td>53</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=2&schType=ALL&schString=&idx=335&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2018-08-20T10:00:02.1070000">2018.08.20</time></td></tr>
+											<tr><td>52</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=311&LDiv=KO" alt="안녕하세요, JYP엔터테인먼트입니다." title="안녕하세요, JYP엔터테인먼트입니다.">안녕하세요, JYP엔터테인먼트입니다.</a></td><td><time datetime="2018-02-13T20:58:32.1830000">2018.02.13</time></td></tr><tr><td>51</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=294&LDiv=KO" alt="안녕하세요, JYP Entertainment 입니다." title="안녕하세요, JYP Entertainment 입니다.">안녕하세요, JYP Entertainment 입니다.</a></td><td><time datetime="2017-09-22T13:33:20.0000000">2017.09.22</time></td></tr><tr><td>50</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=269&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다" title="안녕하세요, JYP 엔터테인먼트입니다">안녕하세요, JYP 엔터테인먼트입니다</a></td><td><time datetime="2017-03-22T19:17:04.3200000">2017.03.22</time></td></tr><tr><td>49</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=265&LDiv=KO" alt="2017 JYP PUBLISHING 상반기 작곡가 오디션안내" title="2017 JYP PUBLISHING 상반기 작곡가 오디션안내">2017 JYP PUBLISHING 상반기 작곡가 오디션안내</a></td><td><time datetime="2017-02-28T18:03:41.4600000">2017.02.28</time></td></tr><tr><td>48</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=261&LDiv=KO" alt="안녕하세요, JYP Entertainment 입니다." title="안녕하세요, JYP Entertainment 입니다.">안녕하세요, JYP Entertainment 입니다.</a></td><td><time datetime="2017-01-26T16:03:35.7770000">2017.01.26</time></td></tr><tr><td>47</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=260&LDiv=KO" alt="안녕하세요. JYP 엔터테인먼트 입니다." title="안녕하세요. JYP 엔터테인먼트 입니다.">안녕하세요. JYP 엔터테인먼트 입니다.</a></td><td><time datetime="2017-01-20T17:20:05.9700000">2017.01.20</time></td></tr><tr><td>46</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=242&LDiv=KO" alt="2016 JYP VIDEO CREATOR 공모전" title="2016 JYP VIDEO CREATOR 공모전">2016 JYP VIDEO CREATOR 공모전</a></td><td><time datetime="2016-10-31T09:46:41.1770000">2016.10.31</time></td></tr><tr><td>45</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=240&LDiv=KO" alt="2016 JYP PUBLISHING 하반기 작곡가 오디션안내" title="2016 JYP PUBLISHING 하반기 작곡가 오디션안내">2016 JYP PUBLISHING 하반기 작곡가 오디션안내</a></td><td><time datetime="2016-10-18T11:44:31.2900000">2016.10.18</time></td></tr><tr><td>44</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=3&schType=ALL&schString=&idx=239&LDiv=KO" alt="안녕하세요, JYP Entertainment 입니다." title="안녕하세요, JYP Entertainment 입니다.">안녕하세요, JYP Entertainment 입니다.</a></td><td><time datetime="2016-10-14T18:50:20.2430000">2016.10.14</time></td></tr>
+											<tr><td>43</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=219&LDiv=KO" alt="2016 JYP PUBLISHING 상반기 작곡가 오디션안내" title="2016 JYP PUBLISHING 상반기 작곡가 오디션안내">2016 JYP PUBLISHING 상반기 작곡가 오디션안내</a></td><td><time datetime="2016-06-10T17:33:04.0100000">2016.06.10</time></td></tr><tr><td>42</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=213&LDiv=KO" alt="JYP엔터테인먼트입니다." title="JYP엔터테인먼트입니다.">JYP엔터테인먼트입니다.</a></td><td><time datetime="2016-05-20T11:01:17.7300000">2016.05.20</time></td></tr><tr><td>41</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=199&LDiv=KO" alt="안녕하세요 박진영입니다." title="안녕하세요 박진영입니다.">안녕하세요 박진영입니다.</a></td><td><time datetime="2016-01-15T23:00:14.7330000">2016.01.15</time></td></tr><tr><td>40</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=187&LDiv=KO" alt="JYP엔터테인먼트입니다." title="JYP엔터테인먼트입니다.">JYP엔터테인먼트입니다.</a></td><td><time datetime="2015-10-14T17:48:44.5530000">2015.10.14</time></td></tr><tr><td>39</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=172&LDiv=KO" alt="2015 JYP PUBLISHING 하반기 작곡가 오디션안내" title="2015 JYP PUBLISHING 하반기 작곡가 오디션안내">2015 JYP PUBLISHING 하반기 작곡가 오디션안내</a></td><td><time datetime="2015-08-13T18:39:16.1130000">2015.08.13</time></td></tr><tr><td>38</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=161&LDiv=KO" alt="JYP엔터테인먼트입니다." title="JYP엔터테인먼트입니다.">JYP엔터테인먼트입니다.</a></td><td><time datetime="2015-07-08T15:16:14.8530000">2015.07.08</time></td></tr><tr><td>37</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=151&LDiv=KO" alt="JYP엔터테인먼트입니다" title="JYP엔터테인먼트입니다">JYP엔터테인먼트입니다</a></td><td><time datetime="2015-05-11T08:00:04.9800000">2015.05.11</time></td></tr><tr><td>36</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=149&LDiv=KO" alt="2015 2PM 서울콘서트 티켓오픈 안내" title="2015 2PM 서울콘서트 티켓오픈 안내">2015 2PM 서울콘서트 티켓오픈 안내</a></td><td><time datetime="2015-05-08T12:12:43.8330000">2015.05.08</time></td></tr><tr><td>35</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=4&schType=ALL&schString=&idx=142&LDiv=KO" alt="2015 JYP PUBLISHING 작곡가 오디션안내" title="2015 JYP PUBLISHING 작곡가 오디션안내">2015 JYP PUBLISHING 작곡가 오디션안내</a></td><td><time datetime="2015-02-13T18:51:47.9030000">2015.02.13</time></td></tr>
+											<tr><td>34</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=129&LDiv=KO" alt="2014 JYP PUBLISHING 작곡가 오디션안내" title="2014 JYP PUBLISHING 작곡가 오디션안내">2014 JYP PUBLISHING 작곡가 오디션안내</a></td><td><time datetime="2014-08-13T13:52:12.0330000">2014.08.13</time></td></tr><tr><td>33</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=124&LDiv=KO" alt="JYP NATION in HongKong 2014 <ONE MIC>" title="JYP NATION in HongKong 2014 <ONE MIC>">JYP NATION in HongKong 2014 &lt;ONE MIC&gt;</a></td><td><time datetime="2014-06-20T14:04:06.4370000">2014.06.20</time></td></tr><tr><td>32</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=122&LDiv=KO" alt="JYPNATION 2014  「ONE MIC」" title="JYPNATION 2014  「ONE MIC」">JYPNATION 2014  「ONE MIC」</a></td><td><time datetime="2014-06-09T10:47:01.6370000">2014.06.09</time></td></tr><tr><td>31</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=115&LDiv=KO" alt="2014년 상반기 JYP 작사/작곡가 오디션 안내 " title="2014년 상반기 JYP 작사/작곡가 오디션 안내 ">2014년 상반기 JYP 작사/작곡가 오디션 안내 </a></td><td><time datetime="2014-02-27T10:29:01.1600000">2014.02.27</time></td></tr><tr><td>30</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=111&LDiv=KO" alt="안녕하세요, JYP엔터테인먼트입니다." title="안녕하세요, JYP엔터테인먼트입니다.">안녕하세요, JYP엔터테인먼트입니다.</a></td><td><time datetime="2013-12-11T14:54:02.1600000">2013.12.11</time></td></tr><tr><td>29</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=107&LDiv=KO" alt="(주주 공지 사항) 합병종료보고 공고" title="(주주 공지 사항) 합병종료보고 공고">(주주 공지 사항) 합병종료보고 공고</a></td><td><time datetime="2013-10-17T09:36:21.4070000">2013.10.17</time></td></tr><tr><td>28</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=106&LDiv=KO" alt="(주주 공지 사항) 합병에 따른 구주권 제출 및 채권자 이의제출 공고" title="(주주 공지 사항) 합병에 따른 구주권 제출 및 채권자 이의제출 공고">(주주 공지 사항) 합병에 따른 구주권 제출 및 채권자 이의제출 공고</a></td><td><time datetime="2013-09-13T13:44:30.4200000">2013.09.13</time></td></tr><tr><td>27</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=105&LDiv=KO" alt="(주주 공지 사항) 2013.08.29일자에 발송한 임시주주총회 소집통지서의 내용 중 일부 변경 공지의 건" title="(주주 공지 사항) 2013.08.29일자에 발송한 임시주주총회 소집통지서의 내용 중 일부 변경 공지의 건">(주주 공지 사항) 2013.08.29일자에 발송한 임시주주총회 소집통지서의 내..</a></td><td><time datetime="2013-09-12T15:02:09.6170000">2013.09.12</time></td></tr><tr><td>26</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=5&schType=ALL&schString=&idx=96&LDiv=KO" alt="JYP 엔터테인먼트입니다" title="JYP 엔터테인먼트입니다">JYP 엔터테인먼트입니다</a></td><td><time datetime="2013-04-24T09:34:19.2000000">2013.04.24</time></td></tr>
+												<tr><td>25</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=95&LDiv=KO" alt="주식회사 제이와이피엔터테인먼트  내부정보관리규정" title="주식회사 제이와이피엔터테인먼트  내부정보관리규정">주식회사 제이와이피엔터테인먼트  내부정보관리규정</a></td><td><time datetime="2013-02-22T18:25:04.5230000">2013.02.22</time></td></tr><tr><td>24</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=90&LDiv=KO" alt="JYP FACEBOOK EDITOR 모집" title="JYP FACEBOOK EDITOR 모집">JYP FACEBOOK EDITOR 모집</a></td><td><time datetime="2013-02-21T16:12:53.3570000">2013.02.21</time></td></tr><tr><td>23</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=75&LDiv=KO" alt="JYP 연습생 공채 10기 오디션 서울 예선 안내" title="JYP 연습생 공채 10기 오디션 서울 예선 안내">JYP 연습생 공채 10기 오디션 서울 예선 안내</a></td><td><time datetime="2013-01-14T16:54:50.4700000">2013.01.14</time></td></tr><tr><td>22</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=72&LDiv=KO" alt="JYP 연습생 공채 10기 오디션 안내" title="JYP 연습생 공채 10기 오디션 안내">JYP 연습생 공채 10기 오디션 안내</a></td><td><time datetime="2012-12-13T18:13:07.1500000">2012.12.13</time></td></tr><tr><td>21</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=67&LDiv=KO" alt="안녕하세요 JYP 엔터테인먼트입니다." title="안녕하세요 JYP 엔터테인먼트입니다.">안녕하세요 JYP 엔터테인먼트입니다.</a></td><td><time datetime="2012-10-05T15:59:24.7470000">2012.10.05</time></td></tr><tr><td>20</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=61&LDiv=KO" alt="JYP 엔터테인먼트입니다" title="JYP 엔터테인먼트입니다">JYP 엔터테인먼트입니다</a></td><td><time datetime="2012-07-26T16:00:16.9200000">2012.07.26</time></td></tr><tr><td>19</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=60&LDiv=KO" alt="안녕하세요 JYP엔터테인먼트입니다." title="안녕하세요 JYP엔터테인먼트입니다.">안녕하세요 JYP엔터테인먼트입니다.</a></td><td><time datetime="2012-07-24T07:20:00.4630000">2012.07.24</time></td></tr><tr><td>18</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=58&LDiv=KO" alt="FAN`s Day에 JYP Nation의 팬 여러분을 모십니다." title="FAN`s Day에 JYP Nation의 팬 여러분을 모십니다.">FAN`s Day에 JYP Nation의 팬 여러분을 모십니다.</a></td><td><time datetime="2012-07-17T18:04:52.1570000">2012.07.17</time></td></tr><tr><td>17</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=6&schType=ALL&schString=&idx=47&LDiv=KO" alt="안녕하세요 JYP 엔터테인먼트입니다." title="안녕하세요 JYP 엔터테인먼트입니다.">안녕하세요 JYP 엔터테인먼트입니다.</a></td><td><time datetime="2012-05-19T22:23:18.8930000">2012.05.19</time></td></tr>
+												<tr><td>16</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=45&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2012-05-16T14:51:45.0830000">2012.05.16</time></td></tr><tr><td>15</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=42&LDiv=KO" alt="안녕하세요, JYP입니다. " title="안녕하세요, JYP입니다. ">안녕하세요, JYP입니다. </a></td><td><time datetime="2012-05-11T16:53:16.4500000">2012.05.11</time></td></tr><tr><td>14</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=31&LDiv=KO" alt=" 안녕하세요, JYP엔터테인먼트입니다. (From JYPE) " title=" 안녕하세요, JYP엔터테인먼트입니다. (From JYPE) "> 안녕하세요, JYP엔터테인먼트입니다. (From JYPE) </a></td><td><time datetime="2011-08-22T00:00:00.0000000">2011.08.22</time></td></tr><tr><td>13</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=30&LDiv=KO" alt="안녕하세요, JYP엔터테인먼트입니다." title="안녕하세요, JYP엔터테인먼트입니다.">안녕하세요, JYP엔터테인먼트입니다.</a></td><td><time datetime="2011-03-18T00:00:00.0000000">2011.03.18</time></td></tr><tr><td>12</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=29&LDiv=KO" alt="안녕하세요. 양진만입니다" title="안녕하세요. 양진만입니다">안녕하세요. 양진만입니다</a></td><td><time datetime="2011-02-28T00:00:00.0000000">2011.02.28</time></td></tr><tr><td>11</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=28&LDiv=KO" alt="안녕하세요, 박진영입니다." title="안녕하세요, 박진영입니다.">안녕하세요, 박진영입니다.</a></td><td><time datetime="2011-02-15T00:00:00.0000000">2011.02.15</time></td></tr><tr><td>10</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=27&LDiv=KO" alt="안녕하세요. 박진영입니다." title="안녕하세요. 박진영입니다.">안녕하세요. 박진영입니다.</a></td><td><time datetime="2011-02-14T00:00:00.0000000">2011.02.14</time></td></tr><tr><td>9</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=26&LDiv=KO" alt="안녕하세요, JYP엔터테인먼트입니다." title="안녕하세요, JYP엔터테인먼트입니다.">안녕하세요, JYP엔터테인먼트입니다.</a></td><td><time datetime="2010-12-22T00:00:00.0000000">2010.12.22</time></td></tr><tr><td>8</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=7&schType=ALL&schString=&idx=25&LDiv=KO" alt="안녕하세요, 박진영입니다" title="안녕하세요, 박진영입니다">안녕하세요, 박진영입니다</a></td><td><time datetime="2010-12-10T00:00:00.0000000">2010.12.10</time></td></tr>
+												<tr><td>7</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=24&LDiv=KO" alt="JYP엔터테인먼트 입니다." title="JYP엔터테인먼트 입니다.">JYP엔터테인먼트 입니다.</a></td><td><time datetime="2010-05-13T00:00:00.0000000">2010.05.13</time></td></tr><tr><td>6</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=23&LDiv=KO" alt="WonderGirls’ Worldwide Launching Event!!" title="WonderGirls’ Worldwide Launching Event!!">WonderGirls’ Worldwide Launching Event!!</a></td><td><time datetime="2010-05-01T00:00:00.0000000">2010.05.01</time></td></tr><tr><td>5</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=22&LDiv=KO" alt="안녕하세요, JYP엔터테인먼트입니다." title="안녕하세요, JYP엔터테인먼트입니다.">안녕하세요, JYP엔터테인먼트입니다.</a></td><td><time datetime="2010-03-02T00:00:00.0000000">2010.03.02</time></td></tr><tr><td>4</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=21&LDiv=KO" alt="안녕하세요, JYP 엔터테인먼트입니다." title="안녕하세요, JYP 엔터테인먼트입니다.">안녕하세요, JYP 엔터테인먼트입니다.</a></td><td><time datetime="2010-02-25T00:00:00.0000000">2010.02.25</time></td></tr><tr><td>3</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=20&LDiv=KO" alt="팬 여러분 안녕하십니까?" title="팬 여러분 안녕하십니까?">팬 여러분 안녕하십니까?</a></td><td><time datetime="2010-01-27T00:00:00.0000000">2010.01.27</time></td></tr><tr><td>2</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=19&LDiv=KO" title="JYP Entertainment 오디션 담당자입니다.">JYP Entertainment 오디션 담당자입니다.</a></td><td><time datetime="2010-01-19T00:00:00.0000000">2010.01.19</time></td></tr><tr><td>1</td><td class="l"><a href="https://www.jype.com/company/NoticeView.aspx?pageNo=8&schType=ALL&schString=&idx=18&LDiv=KO" alt="JYP 온라인 오디션 사이트가 문을 열었습니다!" title="JYP 온라인 오디션 사이트가 문을 열었습니다!">JYP 온라인 오디션 사이트가 문을 열었습니다!</a></td><td><time datetime="2010-01-13T00:00:00.0000000">2010.01.13</time></td></tr>
+									</tbody>
+								</table>
+							</div>
+
+			
+			  <div class="board-page">
+					<ul id="myPager">
+						<li class="pagination" ><a href="#" class="first prev_link" alt="1" title="처음">처음</a></li>
+						<li class="pagination" ><a class="prev prev_link" href="#" alt="1" title="이전 9개">이전</a></li>
+						<li class="pagination" ><a href="#" class="page_link active">1</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="2" title="2">2</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="3" title="3">3</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="4" title="4">4</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="5" title="5">5</a></a> </li>
+						<li class="pagination" ><a href="#" class= page_link alt="6" title="6">6</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="7" title="7">7</a></li>
+						<li class="pagination" ><a href="#" class= page_link alt="8" title="8">8</a></li>
+						<li class="pagination" ><a href="#" class="next next_link" alt="8" title="다음 9개">다음</a></li>
+						<li class="pagination" ><a href="#" class="last next_link" alt="8" title="마지막">마지막</a></li>
+					</ul>
+				</div>
+
+				<form name="frmSearch" onsubmit="return false;">
+					<input type="hidden" name="pageNo" value="1" />
+			
+			
+					<fieldset class="board-search">   <!-- -->
+						<select name="schType">
+						
+							<option value="ALL">전체</option>
+							<option value="title" >제목</option>
+							<option value="contents" >내용</option>
+						
+						</select>
+						<input type="text" name="schString" value="" />
+						
+						<a class="btn" href="#" title="검색"></a>
+						
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+</section>
+</div>	
+</div>	
+</div>
+
+<!-- e: 서브 컨텐츠 페이지 로딩 위치.. -->
+
+<div id="footer-jyp">
+<div class="footerbox">
+<div class="footerbox-l">
+<!--<div id="btn-information"><a href="http://jypestorage.blob.core.windows.net/cmdjypcenter/표준내부정보관리규정(주식회사제이와이피엔터테인먼트).pdf"><p>내부정보관리규정</p></a></div>-->
+<div id="btn-personal"><a href="https://www.jype.com/personal.aspx?LDiv=KO#" onclick="javascript:tLinkFormat('personal');" target="_self"><p>개인정보처리방침</p></a></div>
+</div>
+<div class="footerbox-r">
+<!-- Clickable Nav -->
+<div class="family-click-nav">
+<ul class="no-js">
+<li>
+<a class="clicker">FAMILY SITE </a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#222;">▲</span>
+  <ul>
+	<li><a href="https://fans.jype.com/" target="_blank">JYP Fan's</a></li>
+	<!-- <li><a href="https://jypstore.interpark.com/" target="_blank">JYP STORE</a></li> -->
+	<li><a href="https://edm-wish.jype.com" target="_blank">JYP_EDM</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+<!-- /Clickable Nav -->
+</div>
+<div class="footerclear"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
