@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+<title>:: JYP Entertainment :: </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	
+<!--s: slideKit of Plugin styles -->
+<link rel="stylesheet" type="text/css" href="etc/css/sliderkit/sliderkit-demos.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="etc/css/sliderkit/sliderkit-core.css" media="screen" />
+<!--e: //slideKit of Plugin styles -->
+
+
+<link href="etc/css/design.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="etc/css/styles_new.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="etc/css/main.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="etc/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="etc/css/artist.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="etc/css/new_album.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<!--s: slideKit of Plugin scripts -->
+<script type="text/javascript" src="etc/js/sliderkit/jquery.sliderkit.1.6.min.js"></script>
+<script type="text/javascript" src="etc/js/sliderkit/jquery.mousewheel.min.js"></script>
+<!--e: //slideKit of Plugin scripts -->
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+<!--중앙에 메인 페이지 넘어가는 코드-->
+
+<style>
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 980px;
+    height: 100%;
+    z-index: 0;
+}
+.swiper-slide.slide1 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.youtube-slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 140px;
+    transition: left 0.7s;
+}
+
+
+</style>
+
+<style type="text/css">
+    body{background-color:#fff}
+    #images{visibility:hidden}
+    #loading{text-align:center;width:100%}
+    #loading img{margin-top:25px;width:45px;position:relative}
+    #captions{display:none;font-weight:bold;position:relative;text-align:center;z-index:10000}
+    #scrollbar{display:none;visibility:hidden;position:relative;border-bottom:1px solid #b3b3b3;z-index:10001}
+    #slider{display:none}
+
+</style>  
+
+    </head>    
+    
+    <body>
+    <!-- 희윤님 -->
+    <header>
+    <nav>
+        <div class="nav_bg">
+            <div id="cssmenu">
+                <ul>
+                    <li class="jyplogo">
+        <a href="./page1.html" onclick="javascript:tLinkFormat('Main');" title="JYP Entertainment">JYPEntertainment
+        </a>
+    </li>
+    <li class="has-sub">
+        <a href="etc/page5.html" onclick="javascript:tLinkFormat('AboutJYP');"><img src="etc/image/nav-company.png">
+        </a>
+        <ul>
+            <li><a href="etc/page5.html" onclick="javascript:tLinkFormat('AboutJYP');" title="About JYP">ABOUT JYP</a>
+            </li>
+            <li><a href="etc/page6.html" onclick="javascript:tLinkFormat('History');" title="History">HISTORY</a>
+            </li>
+            <li><a href="../page2/page2.html" onclick="javascript:tLinkFormat('Notice');" title="Notice" >NOTICE</a>
+            </li>
+            <li><a href="https://recruit.jype.com" target="_blank">RECRUIT</a>
+            </li>
+            <li><a href="https://edm-wish.jype.com" target="_blank">CSR</a>
+            </li>
+            <li class="last"><a href="https://www.jype.com/ir/Stock.aspx?LDiv=KO" onclick="javascript:tLinkFormat('Stock');" title="Financial information">IR</a>
+            </li>
+                    
+            <li><a href="etc/page7.html" onclick="javascript:tLinkFormat('ContactUs');" title="Contact Us">CONTACT US</a>
+            </li>
+        </ul>
+    </li>
+    <li class="has-sub">
+        <a href="../page3/page3.html" onclick="javascript:tLinkFormat('Artist')"><img src="etc/image/nav-artist.png"></a>
+    </li>
+    <li class="has-sub last">
+        <a href="../page4/page4.html" target="_blank"><img src="etc/image/nav-audition.png"></a>
+    </li>
+    <li class="util">
+        <div class="global">
+            <span>KO</span>
+            <span>
+                <a href="https://www.jype.com/Main.aspx?LDiv=EN">EN</a>
+            </span>
+            <span>
+                <a href="https://www.jype.com/Main.aspx?LDiv=CH">CH</a>
+            </span>
+            <span>
+                <a href="https://www.jype.com/Main.aspx?LDiv=JP">JP</a>
+            </span>
+        </div>
+    </li>
+    <li>
+        <div class="snsicon">
+            <a href="https://twitter.com/jypnation" target="_blank" class="twitter">JYP Official Twitter</a>
+            <a href="https://www.facebook.com/jypnation" target="_blank" class="facebook">JYP Official Facebook</a>
+            <a href="https://www.youtube.com/jypentertainment" target="_blank" class="youtube">JYP Official Youtube</a>
+            <a href="https://edm-wish.jype.com" target="_blank" class="edm">EDM</a>
+        </div>
+    </li>
+    </ul>
+    </div>
+    </nav>
+    </header>
+
+
+
+        <!--희윤님-->
+   
+
+<div class="sub-outside-wrap">
+    <div>
+        <section>  
+            <section class="main-notice">
+                <div class="main-notice-wrap">
+                    <div class="notice">
+                    <ul>
+                        <li>
+                        <a href="https://www.jype.com/company/NoticeView.aspx?idx=383&amp;LDiv=KO" alt="제26기 결산공고" title="제26기 결산공고">제26기 결산공고</a>
+                        <time datetime="2021-03-31T18:42:36.8270000">2021.03.31</time>
+                        </li>
+                        <li>
+                        <a href="https://www.jype.com/company/NoticeView.aspx?idx=382&amp;LDiv=KO" alt="(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지" title="(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지">(주주 공지 사항) 제26기 사업보고서 및 감사보고서 공지</a>
+                        <time datetime="2021-03-18T19:31:22.7370000">2021.03.18</time>
+                        </li>
+                        <li>
+                        <a href="https://www.jype.com/company/NoticeView.aspx?idx=381&amp;LDiv=KO" alt=" (주주 공지 사항) 제26기 정기주주총회 소집 통지" title=" (주주 공지 사항) 제26기 정기주주총회 소집 통지"> (주주 공지 사항) 제26기 정기주주총회 소집 통지</a>
+                        <time datetime="2021-03-12T14:44:44.7230000">2021.03.12</time>
+                        </li>
+                    </ul>
+                    </div>
+
+               
+                    <div class="new_album">
+                        <div class="new_album_slide">
+                            <img class="next" src="etc/image/page_album_next.png">
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slides">
+                                        <a href="https://xdinaryheroes.jype.com/Default/DiscographyView?AamSeq=158" target='_blank'><img src="etc/image/new_album01.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://straykids.jype.com/Default/DiscographyView?AamSeq=157&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album02.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://twice.jype.com/Default/DiscographyView?AamSeq=155&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album03.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://twice.jype.com/Default/DiscographyView?AamSeq=154&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album04.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://itzy.jype.com/Default/DiscographyView?AamSeq=136&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album05.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://straykids.jype.com/Default/DiscographyView?AamSeq=150&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album06.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://jyp.jype.com/Default/DiscographyView?AamSeq=132&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album07.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://day6.jype.com/Default/DiscographyView?AamSeq=134&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album08.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://itzy.jype.com/Default/DiscographyView?AamSeq=136&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album09.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://straykids.jype.com/Default/DiscographyView?AamSeq=139&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album10.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://day6.jype.com/Default/DiscographyView?AamSeq=140&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album11.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://2pm.jype.com/Default/DiscographyView?AamSeq=138&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album12.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://twice.jype.com/Default/DiscographyView?AamSeq=137&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album13.jpg"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://itzy.jype.com/Default/DiscographyView?AamSeq=135&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album14.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://itzy.jype.com/Default/DiscographyView?AamSeq=133&AmSeq=0&PgIndex=0" target='_blank'><img src="etc/image/new_album15.png"></a>
+                                    </div>
+                                    <div class="swiper-slide slides">
+                                        <a href="https://2pm.jype.com/Default/DiscographyView?AamSeq=138" target='_blank'><img src="etc/image/new_album16.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="prev" src="etc/image/page_album_prev.png">
+                        </div>
+
+                    </div>
+                    
+                    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+                    <script type="text/javascript">
+                        var swiper = new Swiper(".mySwiper", {
+                            loop: false,
+                            initialSlide: 7,
+                            centeredSlides: true,
+                            slideToClickedSlide: true,
+                            effect: "coverflow",
+                            coverflowEffect: {
+                                rotate: 0,
+                                slideShadows: false,
+                                stretch: 240,
+                                depth: 275,
+                            },
+                            navigation: {
+                                nextEl: ".next",
+                                prevEl: ".prev",
+                            },
+                        });
+                    </script>
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+    <!-- 슬기님 -->  
+    <section class="main-artist-rolling">
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide slide1" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_0" title="Happy Death Day" onclick="window.open('https://xdinaryheroes.jype.com/');" src="https://jypestorage.blob.core.windows.net/mainbanner/banner%20pc(2).jpg" alt="Happy Death Day" style="cursor:pointer;">
+                    </div>
+                    
+                    <div class="swiper-slide slide1" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_1" title="Christmas EveL" onclick="window.open('https://straykids.jype.com/');" src="https://jypestorage.blob.core.windows.net/mainbanner/jyp%20%ea%b3%b5%ed%99%88.jpg" alt="Christmas EveL" style="cursor:pointer;">
+                    </div>
+
+                    <div class="swiper-slide slide1" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_2" title="Formula of Love: O+T=&#60;3" onclick="window.open(&#39;http://twice.jype.com&#39;);" src="https://jypestorage.blob.core.windows.net/mainbanner/pc.jpg" alt="Formula of Love: O+T=&amp;lt;3" style="cursor:pointer;" />
+                    </div>
+                    
+                    <div class="swiper-slide slide1" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_3" title="The Feels" onclick="window.open(&#39;http://twice.jype.com&#39;);" src="https://jypestorage.blob.core.windows.net/mainbanner/TW_TheFeel_JYP%20banner_980x440.jpg" alt="The Feels" style="cursor:pointer;" />
+                    </div>
+                    
+                    <div class="swiper-slide slide1" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_4" title="CRAZY IN LOVE" onclick="window.open(&#39;https://itzy.jype.com/&#39;);" src="https://jypestorage.blob.core.windows.net/mainbanner/LOCO-WEB-980-440.jpg" alt="CRAZY IN LOVE" style="cursor:pointer;" />
+                    </div>
+                    
+                
+                    <div class="swiper-slide slide1 swiper-slide-prev" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_5" title="NOEASY" onclick="window.open('https://straykids.jype.com/');" src="https://jypestorage.blob.core.windows.net/mainbanner/%eb%85%b8%ec%9d%b4%ec%a7%80%20%ea%b3%b5%ed%99%88.jpg" alt="NOEASY" style="cursor:pointer;">
+                    </div>
+
+                    <div class="swiper-slide slide1 swiper-slide-active" style="width: 980px; margin-right: 30px;">
+                    <img id="contents_repMainBannerList_imgMainBanner_6" title="GUESS WHO" onclick="window.open('https://itzy.jype.com/');" src="https://jypestorage.blob.core.windows.net/mainbanner/WEB-GUESSWHO-980-440.jpg" alt="GUESS WHO" style="cursor:pointer;">
+                    </div>
+            </div>
+    
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-clickable">
+         
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet"></span>
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-disabled"></div>
+            <div class="swiper-button-prev"></div>
+        </div>         
+      </section>   
+    
+      <script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.js"></script>
+      <script>
+      var swiper = new Swiper('.swiper-container-horizontal', {
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      paginationClickable: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: 7000,
+      autoplayDisableOnInteraction: false
+      });
+      </script>
+    
+
+    <!--슬기님 끝-->
+
+
+    <!-- 해솔 -->
+  <div id="_toolbar">
+  <section class="main-sns-relation">	
+        <div id="mainbottom-toolbar">
+            <div id="mainbottom-toolbar-list">
+                <!--s: YouTube Video-->
+                <div class="youtube-wrap">
+                    <!-- s: sliderkit-->
+                    <div class="sliderkit thumbil-std" style="display: block;">
+                        <div class="sliderkit-nav">
+                            <!-- /////////  -->
+                            <div class="sliderkit-nav-clip" style="width: 560px; height: 90px;">
+                                <ul class="youtube-slides" style="width: 1120px;">
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick = "window.open(&#39;https://youtu.be/fGubAEGT8f4&#39;);">
+                                     <figure>
+                                        <img src="http://i.ytimg.com/vi/fGubAEGT8f4/default.jpg" width="120" height="90" alt="Xdinary Heroes " happy="" death="" day m="" v class="clip-img">
+                                         <figcaption>Xdinary Heroes "Happy Death Day" M/V
+                                         </figcaption>
+                                         <a class="play" href="#">Play</a>
+                                         <span class="over">
+                                             <span class="type"><img src="etc/image/mv_caption.gif" alt="music video">
+                                             </span>
+                                             <span class="featby">Xdinary Heroes "Happy Death Day" M/V</span>
+                                         </span>
+                                     </figure>
+                                    </li>   
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick = "window.open(&#39;https://youtu.be/S4qK-Gzyws0&#39;);">
+                                        <figure>
+                                        <img src="http://i.ytimg.com/vi/S4qK-Gzyws0/default.jpg" width="120" height="90" alt="Stray Kids(스트레이 키즈) " winter="" falls”="" m="" v class="clip-img">
+                                        <figcaption>Stray Kids(스트레이 키즈) "Winter Falls” M/V</figcaption>    <a class="play" href="#">Play</a>    <span class="over">
+                                        <span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>
+                                        <span class="featby">Stray Kids(스트레이 키즈) "Winter Falls” M/V</span>
+                                    </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/S4qK-Gzyws0&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/57n4dZAPxNY/default.jpg" width="120" height="90"alt="Stray Kids " christmas="" evel m="" v class="clip-img">
+                                            <figcaption>Stray Kids "Christmas EveL" M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>        
+                                            <span class="featby">Stray Kids "Christmas EveL" M/V</span>
+                                        </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/vPwaXytZcgI&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/vPwaXytZcgI/default.jpg" width="120" height="90" alt="TWICE(트와이스) “SCIENTIST” M/V" class="clip-img">
+                                            <figcaption>TWICE(트와이스) “SCIENTIST” M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>
+                                            <span class="featby">TWICE(트와이스) “SCIENTIST” M/V</span>
+                                        </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/f5_wn8mexmM&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/f5_wn8mexmM/default.jpg" width="120" height="90" alt="TWICE(트와이스) " the="" feels m="" v class="clip-img">
+                                            <figcaption>TWICE(트와이스) "The Feels" M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>
+                                            <span class="featby">TWICE(트와이스) "The Feels" M/V</span>
+                                        </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/MjCZfZfucEc&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/MjCZfZfucEc/default.jpg" width="120" height="90" alt="ITZY(있지) " loco m="" v class="clip-img">
+                                            <figcaption>ITZY(있지) "LOCO" M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>        
+                                            <span class="featby">ITZY(있지) "LOCO" M/V</span>
+                                        </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/EaswWiwMVs8&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/EaswWiwMVs8/default.jpg" width="120" height="90" alt="Stray Kids(스트레이 키즈) " 소리꾼"="" m="" v"="" class="clip-img">
+                                            <figcaption>Stray Kids(스트레이 키즈) "소리꾼" M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>        
+                                            <span class="featby">Stray Kids(스트레이 키즈) "소리꾼" M/V</span>
+                                        </figure>
+                                    </li>
+                                    <li class="sliderkit-selected" style="width: 140px; height: 90px;" onclick="window.open(&#39;https://youtu.be/N2p__-LRBNc&#39;);">
+                                        <figure>
+                                            <img src="http://i.ytimg.com/vi/N2p__-LRBNc/default.jpg" width="120" height="90" alt="DAY6 (Even of Day) " 뚫고="" 지나가요"="" m="" v"="" class="clip-img">
+                                            <figcaption>DAY6 (Even of Day) "뚫고 지나가요" M/V</figcaption>
+                                            <a class="play" href="#">Play</a>
+                                            <span class="over"><span class="type"><img src="etc/image/mv_caption.gif" alt="music video"></span>        
+                                            <span class="featby">DAY6 (Even of Day) "뚫고 지나가요" M/V</span>    </span>
+                                        </figure>
+                                    </li>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a rel="nofollow" href="#" title="Previous line"><span>Previous line</span></a></div>
+                            <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a rel="nofollow" href="#" title="Next line"><span>Next line</span></a></div>
+                        </div>
+                    </div>
+                    <!--//e: end of sliderkit-->
+                </div>
+                <!--e: //YouTube Video-->
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script type="text/javascript" language="javascript" src="etc/js/main.js"></script>
+    <script type="text/javascript" language="javascript" src="etc/js/youtube.js"></script>
+    <script type="text/javascript" language="javascript" src="etc/js/coverflow/coverflow.js"></script>   
+    <!--plugin JS coverflow Slide-->	  
+
+
+    <script type="text/javascript" language="javascript">
+    //<!--
+    $(function () {
+    $(".album-coverflow .prev").click(function (e) {
+        e.preventDefault();
+
+        CoverFlow.move(-1);
+    });
+
+    $(".album-coverflow .next").click(function (e) {
+        e.preventDefault();
+
+        CoverFlow.move(1);
+    });
+    });
+    //-->
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" language="javascript" src="etc/js/jquery.popupwindow.js"></script>   
+    <!--plugin JS coverflow Slide-->	  
+
+    <script type="text/javascript">
+    
+    $(function() {  
+
+    if($.cookie('popup') != 'done1') {
+     //window.open('popup.html','popup', 'width=260, height=370, left=0, top=0, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+     //$.popupWindow('popup.html', { height: 352, width: 268 });
+    }
+    
+    });
+    </script>
+            </section>
+		
+</div>
+   
+
+
+
+<div id="footer-jyp">
+	<div class="footerbox">
+		<div class="footerbox-l">
+			<div id="btn-personal">
+				<a href="https://www.jype.com/personal.aspx?LDiv=KO#" onclick="javascript:tLinkFormat('personal');" target="_self"><p>개인정보처리방침</p></a>
+			</div>
+		</div>
+		<div class="footerbox-r">
+			<div class="family-click-nav">
+				<ul class="no-js">
+					<li>
+						<a class="cliker">FAMILY SITE</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<span style="color:#222;">▲</span>
+						<ul>
+							<li>
+								<a href="http://fans.jype.com/" target="_blank">JYP Fan's</a>
+							</li>
+							<li>
+								<a href="https://edm-wish.jype.com" target="_blank">JYP_EDM</a>
+							</li>
+
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+	</div>
+</div>
+
+
+</body>
+</html>     
