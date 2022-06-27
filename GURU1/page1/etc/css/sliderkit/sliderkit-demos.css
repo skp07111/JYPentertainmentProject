@@ -1,0 +1,113 @@
+/*---------------------------------
+ *  Youttube Thumbnail
+ *---------------------------------*/
+ .thumbil-std{width:610px;height:90px;margin-top:14px !important; margin-left:334px !important;}
+
+ .thumbil-std .sliderkit-nav{left:0;top:0;width:610px}
+ .thumbil-std .sliderkit-nav-clip{text-align:left; margin-left:35px !important}
+ .thumbil-std .sliderkit-nav-clip ul li{float:left;margin:0;position:relative;width:140px;height:90px;overflow:hidden;text-align:left}
+ 
+ .thumbil-std .sliderkit-btn{position:absolute;top:0;}
+ .thumbil-std .sliderkit-btn span{display:none;}
+ .thumbil-std .sliderkit-btn-disable{opacity:0.3/*can be set to any value until 1*/;cursor:default;}
+ .thumbil-std .sliderkit-btn-disable a:hover{cursor:default;}
+ 
+ .thumbil-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:29px;background:transparent url(../../image/bottom_toolbar.gif) no-repeat}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-prev{left:0;top:30px;}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-next{right:0px;top:30px}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-143px 0}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-next a{background-position:-160px 0}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-prev a:hover, .thumbil-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-143px -33px}
+ .thumbil-std .sliderkit-nav .sliderkit-nav-next a:hover, .thumbil-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-160px -33px}
+ 
+ /*---------------------------------
+  *  Twitter Thumbnail
+  *---------------------------------*/
+ .twitter-std{width:640px;height:97px;margin-top:14px !important; margin-left:314px !important}
+ 
+ .twitter-std .sliderkit-nav{left:0;top:0;width:640px}
+ .twitter-std .sliderkit-nav-clip{text-align:left; margin-left:35px !important}
+ .twitter-std .sliderkit-nav-clip ul li{float:left;margin:0;position:relative;width:290px;height:93px;overflow:hidden;text-align:left}
+ 
+ .twitter-std .sliderkit-btn{position:absolute;top:0;}
+ .twitter-std .sliderkit-btn span{display:none;}
+ 
+ .twitter-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:29px;background:transparent url(../../image/bottom_toolbar.gif) no-repeat}
+ .twitter-std .sliderkit-nav .sliderkit-nav-prev{left:0;top:33px}
+ .twitter-std .sliderkit-nav .sliderkit-nav-next{right:0px;top:33px}
+ .twitter-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-143px -66px}
+ .twitter-std .sliderkit-nav .sliderkit-nav-next a{background-position:-160px -66px}
+ .twitter-std .sliderkit-nav .sliderkit-nav-prev a:hover, .twitter-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-143px 0}
+ .twitter-std .sliderkit-nav .sliderkit-nav-next a:hover, .twitter-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-160px 0}
+ 
+ /*---------------------------------
+  *  Facebook Thumbnail
+  *---------------------------------*/
+ .facebook-std{width:640px;height:97px;margin-top:14px !important; margin-left:314px !important}
+ 
+ .facebook-std .sliderkit-nav{left:0;top:0;width:640px}
+ .facebook-std .sliderkit-nav-clip{text-align:left; margin-left:35px !important}
+ .facebook-std .sliderkit-nav-clip ul li{float:left;margin:0;position:relative;width:290px;height:93px;overflow:hidden;text-align:left}
+ 
+ .facebook-std .sliderkit-btn{position:absolute;top:0;}
+ .facebook-std .sliderkit-btn span{display:none;}
+ 
+ .facebook-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:29px;background:transparent url(../../image/bottom_toolbar.gif) no-repeat}
+ .facebook-std .sliderkit-nav .sliderkit-nav-prev{left:0;top:33px}
+ .facebook-std .sliderkit-nav .sliderkit-nav-next{right:0px;top:33px}
+ .facebook-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-143px -66px}
+ .facebook-std .sliderkit-nav .sliderkit-nav-next a{background-position:-160px -66px}
+ .facebook-std .sliderkit-nav .sliderkit-nav-prev a:hover, .facebook-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-143px 0}
+ .facebook-std .sliderkit-nav .sliderkit-nav-next a:hover, .facebook-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-160px 0}
+ 
+ /*---------------------------------
+  *  ARtist Album  gallery
+  *---------------------------------*/
+ .album-std{width:332px;height:58px;padding:0;float:right;margin:10px 0 0 467px}
+ 
+ .album-std .sliderkit-nav{left:0;top:0;width:332px;padding:0;background:#fff}
+ .album-std .sliderkit-nav-clip ul li{float:left;margin:0;position:relative}
+ .album-std .sliderkit-nav-clip ul li a{display:block;width:50px;height:50px;overflow:hidden;margin:0;padding:4px 4px 4px 2px}
+ 
+ .album-std .sliderkit-btn{position:absolute;top:0;}
+ .album-std .sliderkit-btn span{display:none;}
+ .album-std .sliderkit-btn-disable{opacity:0.4/*can be set to any value until 1*/;cursor:default;}
+ .album-std .sliderkit-btn-disable a:hover{cursor:default;}
+ 
+ .album-std .sliderkit-nav .sliderkit-btn a{display:block;width:20px;height:50px;background:transparent url(../../image/prevnext_album.gif) no-repeat 0 0}
+ .album-std .sliderkit-nav .sliderkit-nav-prev{left:0;top:4px}
+ .album-std .sliderkit-nav .sliderkit-nav-next{right:0;top:4px}
+ .album-std .sliderkit-nav .sliderkit-nav-prev a{background-position:0 0}
+ .album-std .sliderkit-nav .sliderkit-nav-next a{background-position:-26px 0}
+ .album-std .sliderkit-nav .sliderkit-nav-prev a:hover,
+ .album-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:0 -54px}
+ .album-std .sliderkit-nav .sliderkit-nav-next a:hover,
+ .album-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-26px -54px}
+ 
+ .album-std .sliderkit-panels{width:423px;height:464px}
+ .album-std .sliderkit-panel{width:423px;height:464px;}
+ 
+ /*---------------------------------
+  *  Album Photos gallery
+  *---------------------------------*/
+ .albumphotogallery-std{width:835px;height:535px;padding:0}
+ 
+ .albumphotogallery-std .sliderkit-nav{left:0;top:0;width:740px;padding:0;background:#dfdfdf;padding-left:40px}
+ .albumphotogallery-std .sliderkit-nav-clip ul li{float:left;margin:0;position:relative}
+ .albumphotogallery-std .sliderkit-nav-clip ul li a{display:block;width:740px;height:535px;overflow:hidden;margin:0;}
+ 
+ .albumphotogallery-std .sliderkit-btn{position:absolute;top:0;}
+ .albumphotogallery-std .sliderkit-btn span{display:none;}
+ .albumphotogallery-std .sliderkit-btn-disable{opacity:0.3;cursor:default;}
+ .albumphotogallery-std .sliderkit-btn-disable a:hover{cursor:default;}
+ 
+ .albumphotogallery-std .sliderkit-nav .sliderkit-btn a{display:block;width:20px;height:39px;background:transparent url(./common/image/prevnext_photo.gif) no-repeat}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-prev{left:0;top:246px}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-next{right:-40px;top:246px}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-prev a{background-position:0 0}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-next a{background-position:-36px 0}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-prev a:hover,
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:0 -43px}
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-next a:hover,
+ .albumphotogallery-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-36px -43px}
+ 
